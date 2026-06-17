@@ -94,7 +94,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-       - name: Set up OpenJDK
+      - name: Set up OpenJDK
         uses: actions/setup-java@v5
         with:
           distribution: 'zulu'
