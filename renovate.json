@@ -1,0 +1,6 @@
+{
+  "extends": ["config:recommended"],
+  "labels": ["dependencies"],
+  "baseBranches": ["development"],
+  "prConcurrentLimit": 0
+}
