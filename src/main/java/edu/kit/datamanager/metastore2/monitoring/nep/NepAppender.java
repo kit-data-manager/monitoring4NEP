@@ -92,7 +92,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
       if (bearerToken != null) {
         ssc.withBearerToken(bearerToken);
       }
-      VirtualAccessCreate postResource = ssc.putResource(vac, VirtualAccessCreate.class);
+      VirtualAccessCreate postResource = ssc.postResource(vac, VirtualAccessCreate.class);
       if (logger.isTraceEnabled()) {
         virtualAccessCreateAsString = NepAppender.objectMapper.writeValueAsString(postResource);
         logger.trace("Return value: '{}'", virtualAccessCreateAsString);
