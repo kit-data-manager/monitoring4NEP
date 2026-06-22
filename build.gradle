@@ -3,8 +3,8 @@ plugins {
     id 'jacoco'
     id 'org.jsonschema2dataclass' version '4.2.0'
     // plugin for Spring Boot
-    id "io.spring.dependency-management" version "1.0.11.RELEASE" 
-    id 'net.researchgate.release' version '3.0.0'
+    id "io.spring.dependency-management" version "1.0.14.RELEASE" 
+    id 'net.researchgate.release' version '3.0.2'
 }
 
 repositories {
@@ -26,11 +26,11 @@ ext {
 }
 
 dependencies {
-    implementation "ch.qos.logback:logback-classic:1.2.10"
+    implementation "ch.qos.logback:logback-classic:1.4.4"
 
     // datamanager
-    implementation "edu.kit.datamanager:repo-core:1.0.0"
-    implementation "edu.kit.datamanager:service-base:1.0.0"
+    implementation "edu.kit.datamanager:repo-core:1.0.4"
+    implementation "edu.kit.datamanager:service-base:1.0.7"
 
     // Create JSON classes
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
