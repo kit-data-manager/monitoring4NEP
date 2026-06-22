@@ -5,9 +5,9 @@ name: build with gradle
 
 on:
   push:
-    branches: [ main, testWorkflow ]
+    branches: [ main, development, testWorkflow ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, development ]
 
 env:
     # JDK version used for building jar file
