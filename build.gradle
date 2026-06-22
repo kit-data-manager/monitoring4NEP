@@ -4,7 +4,7 @@ plugins {
     id 'org.jsonschema2dataclass' version '4.2.0'
     // plugin for Spring Boot
     id "io.spring.dependency-management" version "1.0.14.RELEASE" 
-    id 'net.researchgate.release' version '3.0.2'
+    id 'net.researchgate.release' version '3.1.0'
 }
 
 repositories {
