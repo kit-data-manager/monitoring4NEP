@@ -30,7 +30,7 @@ dependencies {
 
     // datamanager
     implementation "edu.kit.datamanager:repo-core:1.2.7"
-    implementation "edu.kit.datamanager:service-base:1.0.7"
+    implementation "edu.kit.datamanager:service-base:1.3.6"
 
     // Create JSON classes
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
