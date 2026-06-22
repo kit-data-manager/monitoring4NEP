@@ -29,7 +29,7 @@ dependencies {
     implementation "ch.qos.logback:logback-classic:1.4.4"
 
     // datamanager
-    implementation "edu.kit.datamanager:repo-core:1.0.4"
+    implementation "edu.kit.datamanager:repo-core:1.2.7"
     implementation "edu.kit.datamanager:service-base:1.0.7"
 
     // Create JSON classes
