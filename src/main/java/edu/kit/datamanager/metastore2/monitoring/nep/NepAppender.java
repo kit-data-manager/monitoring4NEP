@@ -46,7 +46,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
   private String virtualServiceId;
 
   private static final ObjectMapper objectMapper = new ObjectMapper();
-  // Creating Object of ObjectMapper define in Jakson Api
+  // Creating Object of ObjectMapper define in Jackson Api
 
   @Override
   protected void append(ILoggingEvent e) {
@@ -92,7 +92,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
       if (bearerToken != null) {
         ssc.withBearerToken(bearerToken);
       }
-      VirtualAccessCreate postResource = ssc.putResource(vac, VirtualAccessCreate.class);
+      VirtualAccessCreate postResource = ssc.postResource(vac, VirtualAccessCreate.class);
       if (logger.isTraceEnabled()) {
         virtualAccessCreateAsString = NepAppender.objectMapper.writeValueAsString(postResource);
         logger.trace("Return value: '{}'", virtualAccessCreateAsString);
@@ -121,7 +121,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
   }
 
   /**
-   * Gets the virtual servide ID.
+   * Gets the virtual service ID.
    *
    * @return the virtualServiceId
    */
