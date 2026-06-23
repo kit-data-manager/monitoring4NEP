@@ -37,7 +37,7 @@ jobs:
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Set up OpenJDK
         uses: actions/setup-java@v5
         with:
@@ -92,7 +92,7 @@ jobs:
       matrix:
         language: [ 'java' ]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Set up OpenJDK
         uses: actions/setup-java@v5
