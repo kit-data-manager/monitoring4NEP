@@ -46,7 +46,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
   private String virtualServiceId;
 
   private static final ObjectMapper objectMapper = new ObjectMapper();
-  // Creating Object of ObjectMapper define in Jakson Api
+  // Creating Object of ObjectMapper define in Jackson Api
 
   @Override
   protected void append(ILoggingEvent e) {
@@ -121,7 +121,7 @@ public class NepAppender extends AppenderBase<ILoggingEvent> {
   }
 
   /**
-   * Gets the virtual servide ID.
+   * Gets the virtual service ID.
    *
    * @return the virtualServiceId
    */
