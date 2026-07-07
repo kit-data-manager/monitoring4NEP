@@ -73,8 +73,18 @@ sourceSets {
 }
 
 jsonSchema2Pojo {
-  source.setFrom files("${project.rootDir}/src/main/resources/json/schema/")
-  targetPackage = 'edu.kit.datamanager.metastore.monitoring.nep.json'
+    executions {
+        main {
+            io {
+                // define the source directory containing the JSON schema files
+                source.setFrom files("${project.rootDir}/src/main/resources/json/schema/")
+            }
+            klass {
+                // define the target package for the generated Java classes
+                targetPackage = 'edu.kit.datamanager.metastore.monitoring.nep.json'
+            }
+        }
+    }
 }
 
 release {
