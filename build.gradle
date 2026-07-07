@@ -25,6 +25,10 @@ ext {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+def buildProfile = project.findProperty("buildProfile") ?: "minimal"
+
+def profileFile = file("$rootDir/gradle/profile-${buildProfile}.gradle")
+
 dependencies {
     implementation "ch.qos.logback:logback-classic:1.5.37"
 
@@ -76,6 +80,14 @@ jsonSchema2Pojo {
 release {
   // define tag pattern (tags have to start with 'v')
   tagTemplate = 'v${version}'
+}
+
+// Apply profile-specific build configuration at the end of this build script
+// to ensure that all settings are available.
+if (profileFile.exists()) {
+    apply from: profileFile
+} else {
+    throw new GradleException("Profile-file missing: $profileFile")
 }
 
 // task for printing project name.
