@@ -74,12 +74,9 @@
         }
     ],
     "keywords": [
-        "Java",
-        "JSON",
-        "JSON Patch",
-        "RFC 6902",
-        "RFC 7396",
-        "Jackson 3",
+        "NEP",
+        "NFFA",
+        "Monitoring",
         "Library"
     ],
     "license": "https://spdx.org/licenses/Apache-2.0",
