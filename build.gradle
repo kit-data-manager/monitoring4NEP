@@ -30,7 +30,7 @@ def buildProfile = project.findProperty("buildProfile") ?: "minimal"
 def profileFile = file("$rootDir/gradle/profile-${buildProfile}.gradle")
 
 dependencies {
-    implementation "ch.qos.logback:logback-classic:1.6.1"
+    implementation "ch.qos.logback:logback-classic:1.6.3"
 
     // datamanager
     implementation "edu.kit.datamanager:repo-core:1.2.7"
